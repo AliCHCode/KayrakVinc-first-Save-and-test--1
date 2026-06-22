@@ -1,0 +1,255 @@
+.headerBar{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    /* overflow: hidden; */
+    .logoLink{
+        margin: 0 50px;
+    }
+    .navBox{
+        width: 75%;
+        height: 145px;
+        border-bottom-left-radius: 25px;
+        background-color: #ff9500;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        padding: 0 50px;
+        padding-bottom: 40px;
+        gap: 20px;
+        a{
+            white-space: nowrap;
+            color: #B11111;
+            font-size: 1.25rem;
+            font-weight: bold;
+            transition: all 0.1s ease-out;
+        }
+        a:hover{
+            text-shadow: 0px 2px 4px rgba(255,255,255,0.4);
+            scale: 1.05;
+        }
+        a:active{
+            scale: 0.97;
+            text-shadow: 0px 0px 2px rgba(255,255,255,0.8);
+        }
+    }
+}
+@media (max-width:1440px) {
+   .headerBar .navBox{
+   }
+   .headerBar .navBox a{
+   }
+   .headerBar .logoLink{
+   }
+   .headerBar .navBox .burgerMenu{
+   }
+}
+
+.headerBarMobile{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    /* overflow: hidden; */
+    .logoLink{
+        margin: 0 50px 0 50px;
+    }
+    .navBox{
+        width: 75%;
+        height: 145px;
+        border-bottom-left-radius: 25px;
+        background-color: #262626;
+        background-color: #ff9500;
+        padding: 25px 50px;
+        .iconBar{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+            a:nth-child(1){
+                width: 36px;
+                height: 36px;
+            }
+            a:nth-child(2){
+                width: 31px;
+                height: 31px;
+            }
+            a:nth-child(3){
+                width: 27px;
+                height: 27px;
+            }
+        }
+        .footerOrangeLine{
+            width: 100%;
+            height: 3px;
+            background-color: #ff9500;
+            background-color: #262626;
+            margin-bottom: 15px;
+        }
+        .menuIconsContainer{
+            width: 100%;
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+            justify-content: flex-end;
+            gap: 2px;
+            color: #ff9500;
+            color: #262626;
+            font-size: 1.5rem;
+            i:nth-child(1){
+                /* margin-right: 2px; */
+                transform: rotate(90deg);
+                color: #B11111;
+            }
+            span{
+                font-size: 1.20rem;
+                font-weight: 800;
+                margin-right: 5px;
+            }
+        }
+    }
+    .mobileSideMenu{
+        width: 300px;
+        height: 100vh;
+        background-color: #ff9500;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        box-shadow: 0px 0px 10px 25px rgba(0, 0, 0, 0.4);
+        padding: 60px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .mobilMenuCloseButton{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 1.8rem;
+            /* color: #B11111; */
+            color: black;
+            cursor: pointer;
+        }
+        .mobileSideMenuİconBar{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 0;
+            background-color: #262626;
+            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
+            .iconBar{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+            .logoLinkMobile {
+                width: 200px;
+                /* height: 50px; */
+                background-color: aqua;
+                box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
+            }
+        }
+        .mobilMenuNav{
+            list-style: none;
+            /* background-color: #aaa; */
+            /* background-color: #262626; */
+            text-align: center;
+            font-size: 1.4rem;
+            i{
+                position: absolute;
+                cursor: pointer;
+                /* margin-left: 3px; */
+                right: -20px;
+                top: 5px;
+                /* color: #B11111; */
+                color: #ff9500;
+            }
+            li{
+                list-style: none;
+                margin-bottom: 8px;
+                padding:2px 0;
+                box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
+                background-color: #262626;
+                /* border-right: 2px solid #ff9500 ; */
+                border-left: 5px solid #ff9500 ;
+                li{
+                    /* margin-left: 25px; */
+                }
+            }
+        }
+        .dropDownLink{
+            margin-bottom: 10px;
+            a{
+                position: relative;
+            }
+        }
+        .dropDown{
+            /* display: none; */
+            /* background-color:#262626; */
+            li{
+                width: 90%;
+                margin-left: 10px;
+                background-color: #323232;
+                border-left: 3px solid #ff9500;
+            }
+            .dropDownInner{
+                /* background-color: #B11111; */
+                li{
+                    background-color: #383838;
+                    border-left: 2px solid #ff9500;
+                    /* padding: 0 0 0 1px; */
+                }
+            }
+        }
+    }
+}
+
+.fotterBar {
+    width: 100%;
+    min-height: 380px;
+    background-color: #262626;
+    padding: 75px 50px;
+    display: flex;
+    align-items: center;
+    .footerContentSide{
+        min-width: 50%;
+        .iconBar{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+            a:nth-child(1){
+                width: 36px;
+                height: 36px;
+            }
+            a:nth-child(2){
+                width: 31px;
+                height: 31px;
+            }
+            a:nth-child(3){
+                width: 27px;
+                height: 27px;
+            }
+        }
+        .footerOrangeLine{
+            width: 100%;
+            height: 2px;
+            background-color: #ff9500;
+            margin-bottom: 10px;
+        }
+        .footertextBar{
+            width: 100%;
+            font-size: 1.5rem;
+        }
+    }
+}
