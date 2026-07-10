@@ -3,7 +3,8 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
+    z-index: 10;
     /* overflow: hidden; */
     .logoLink{
         margin: 0 50px;
