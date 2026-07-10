@@ -33,7 +33,7 @@
     border-radius: 28px;
     .introText {
       width: 39%;
-      background: #f59c0a;
+      background: #FF9500;
       padding: 35px 30px;
       display: flex;
       flex-direction: column;
@@ -80,7 +80,7 @@
   .serviceScopeBox {
     width: 100%;
 
-    background: #f59c0a;
+    background: #FF9500;
 
     border-radius: 28px;
 
