@@ -126,7 +126,7 @@ let catchSelectors = function (){
                             </li>
                             <div class="wideMenuInnerSpecialLine"></div>
                             <li>
-                                <a href="#">Özel Tasarım Vinçler</a>
+                                <a href="../html/ÖzelTasarımVinçler.html">Özel Tasarım Vinçler</a>
                             </li>
                         </ul>
                     </ul>
