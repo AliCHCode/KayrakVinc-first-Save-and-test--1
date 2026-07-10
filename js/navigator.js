@@ -33,12 +33,12 @@ let catchSelectors = function (){
         },
         {
             rel: "stylesheet",
-            href: "../css/navigator.css"
+            href: "./css/navigator.css"
 
         },
         {
             rel: "stylesheet",
-            href: "../css/home.css"
+            href: "./css/home.css"
         },
     ];
     Links.forEach(item =>{
@@ -53,7 +53,7 @@ let catchSelectors = function (){
 
     // let style = document.createElement("link");
     // style.rel="styleSheet";
-    // style.href="../css/navigator.css";
+    // style.href="./css/navigator.css";
     // // head?.appendChild(style);
     // catchedItems?.head?.appendChild(style);
 
@@ -63,18 +63,18 @@ let catchSelectors = function (){
     header.innerHTML=`<div class="headerBarMobile">
              
             <a class="logoLink MainLogoLink" href="index.html">
-                <img src="../assets/logo.png" alt="Logo">
+                <img src="./assets/logo.png" alt="Logo">
             </a>
             <div class="navBox">
                 <div class="iconBar">
                     <a href="#">
-                        <img src="../assets/socialİcons/youtube.png" alt="Youtube İcon">
+                        <img src="./assets/socialİcons/youtube.png" alt="Youtube İcon">
                     </a>
                     <a href="https://www.linkedin.com/in/kayrak-vin%C3%A7-crane-systems-b9ba56245?originalSubdomain=tr">
-                        <img src="../assets/socialİcons/linkedin.png" alt="Linkedin İcon">
+                        <img src="./assets/socialİcons/linkedin.png" alt="Linkedin İcon">
                     </a>
                     <a href="https://wa.me/905423699654">
-                        <img src="../assets/socialİcons/wp.png" alt="Phoneİcon">
+                        <img src="./assets/socialİcons/wp.png" alt="Phoneİcon">
                     </a>
                 </div>
                 <div class="footerOrangeLine"></div>
@@ -87,10 +87,10 @@ let catchSelectors = function (){
                 </div>
                 <ul class="wideNavBox">
                     <li>
-                        <a href="../html/Hakkımızda.html">KURUMSAL</a>
+                        <a href="../Hakkımızda.html">KURUMSAL</a>
                     </li>
                     <li>
-                        <a href="../html/KeşifMontajVeKurulum.html">HİZMETLER</a>
+                        <a href="../KeşifMontajVeKurulum.html">HİZMETLER</a>
                     </li>
                     <ul>
                         <li class="wideMenuUpperTitle">
@@ -122,29 +122,29 @@ let catchSelectors = function (){
                             </li>
                             <div class="wideMenuInnerSpecialLine"></div>
                             <li>
-                                <a href="../html/KancaAltıEkipmanlar.html">Kanca Altı Ekipmanları</a>
+                                <a href="../KancaAltıEkipmanlar.html">Kanca Altı Ekipmanları</a>
                             </li>
                             <div class="wideMenuInnerSpecialLine"></div>
                             <li>
-                                <a href="../html/ÖzelTasarımVinçler.html">Özel Tasarım Vinçler</a>
+                                <a href="../ÖzelTasarımVinçler.html">Özel Tasarım Vinçler</a>
                             </li>
                         </ul>
                     </ul>
 
                     <li>
-                        <a href="../html/ÖzelYapımProjeler.html">ÖZEL YAPIM PROJELER</a>
+                        <a href="../ÖzelYapımProjeler.html">ÖZEL YAPIM PROJELER</a>
                     </li>
                     <li>
-                        <a href="../html/TeknikServisVeBakım.html">TEKNİK SERVİS VE BAKIM</a>
+                        <a href="../TeknikServisVeBakım.html">TEKNİK SERVİS VE BAKIM</a>
                     </li>
                     <li>
-                        <a href="../html/YedeKParçalar.html">YEDEK PARÇALAR</a>
+                        <a href="../YedeKParcalar.html">YEDEK PARÇALAR</a>
                     </li>
                     <li>
                         <a href="#">GALERİ</a>
                     </li>
                     <li>
-                        <a class="specialLink" href="../html/İletişim.html">İLETİŞİM</a>
+                        <a class="specialLink" href="../İletişim.html">İLETİŞİM</a>
                     </li>
                 </ul>
             </div>
@@ -214,17 +214,17 @@ let catchSelectors = function (){
                 <div class="mobileSideMenuİconBar">
                     <div class="iconBar">
                         <a href="#">
-                            <img src="../assets/socialİcons/youtube.png" alt="Youtube İcon">
+                            <img src="./assets/socialİcons/youtube.png" alt="Youtube İcon">
                         </a>
                         <a href="https://www.linkedin.com/in/kayrak-vin%C3%A7-crane-systems-b9ba56245?originalSubdomain=tr">
-                            <img src="../assets/socialİcons/linkedin.png" alt="Linkedin İcon">
+                            <img src="./assets/socialİcons/linkedin.png" alt="Linkedin İcon">
                         </a>
                         <a href="https://wa.me/905423699654">
-                            <img src="../assets/socialİcons/wp.png" alt="Phoneİcon">
+                            <img src="./assets/socialİcons/wp.png" alt="Phoneİcon">
                         </a>
                     </div>
                     <a class="logoLink" href="index.html">
-                        <img class="logoLinkMobile" src="../assets/logo.png" alt="Logo">
+                        <img class="logoLinkMobile" src="./assets/logo.png" alt="Logo">
                     </a>
                 </div>
             </div>
@@ -240,13 +240,13 @@ let catchSelectors = function (){
         <div class="footerContentSide">
             <div class="iconBar">
                 <a href="#">
-                    <img src="../assets/socialİcons/youtube.png" alt="Youtube İcon">
+                    <img src="./assets/socialİcons/youtube.png" alt="Youtube İcon">
                 </a>
                 <a href="https://www.linkedin.com/in/kayrak-vin%C3%A7-crane-systems-b9ba56245?originalSubdomain=tr">
-                    <img src="../assets/socialİcons/linkedin.png" alt="Linkedin İcon">
+                    <img src="./assets/socialİcons/linkedin.png" alt="Linkedin İcon">
                 </a>
                 <a href="https://wa.me/905423699654">
-                    <img src="../assets/socialİcons/wp.png" alt="Phoneİcon">
+                    <img src="./assets/socialİcons/wp.png" alt="Phoneİcon">
                 </a>
             </div>
             <div class="footerOrangeLine"></div>
