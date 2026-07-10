@@ -118,7 +118,7 @@ let catchSelectors = function (){
                             </li>
                             <div class="wideMenuInnerSpecialLine"></div>
                             <li>
-                                <a href="#">Pergel Vinçler</a>
+                                <a href="../PergelVinçler.html">Pergel Vinçler</a>
                             </li>
                             <div class="wideMenuInnerSpecialLine"></div>
                             <li>
