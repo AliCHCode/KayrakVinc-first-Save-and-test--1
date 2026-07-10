@@ -1,0 +1,181 @@
+.companyTitleSection{
+
+    width:81%;
+    margin-bottom:60px;
+
+    .companyTitleContent{
+
+        display:flex;
+        align-items:center;
+        gap:20px;
+
+        .titleSquare{
+
+            width:22px;
+            height:22px;
+            background:#b11111;
+            flex-shrink:0;
+
+        }
+
+        h1{
+
+            font-size:2.8rem;
+            font-weight:700;
+            color:#202020;
+            text-transform:uppercase;
+            line-height:1.2;
+
+        }
+
+    }
+
+}
+
+
+.companyAboutSection{
+
+    width:80%;
+    margin-bottom:65px;
+
+    .companyAboutContent{
+
+        display:flex;
+        flex-direction:column;
+        gap:45px;
+
+        h2{
+
+            font-size:2.8rem;
+            color:#b11111;
+            font-weight:700;
+            text-transform:uppercase;
+
+        }
+
+        .textArea{
+
+            display:flex;
+            flex-direction:column;
+            gap:42px;
+
+            p{
+
+                font-size:1.65rem;
+                line-height:1.8;
+                color:#2c2c2c;
+                max-width:1140px;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+.companyBannerSection{
+
+    width:95%;
+    margin-bottom:70px;
+
+    .companyBanner{
+
+        width:100%;
+        background:#b1aeae;
+        border-radius:28px;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+
+        padding:55px 95px;
+        gap:10px;
+
+        h3{
+
+            font-size:2.9rem;
+            font-weight:700;
+            color:#151515;
+
+        }
+
+        span{
+
+            font-size:2.9rem;
+            color:white;
+            font-weight:700;
+            line-height:1.3;
+
+        }
+
+    }
+
+}
+
+
+.whyUsTitleSection{
+
+    width:80%;
+    margin-bottom:60px;
+
+    h2{
+
+        font-size:2.8rem;
+        color:#b11111;
+        text-transform:uppercase;
+        font-weight:700;
+
+    }
+
+}
+
+
+.whyUsContentSection{
+
+    width:80%;
+    margin-bottom:90px;
+
+    .whyUsContent{
+
+        display:flex;
+        flex-direction:column;
+        gap:48px;
+
+        .whyUsItem{
+
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+
+            h3{
+
+                font-size:2.2rem;
+                font-weight:700;
+                color:#1f1f1f;
+                line-height:1.3;
+
+            }
+
+            p{
+
+                font-size:1.65rem;
+                color:#2f2f2f;
+                line-height:1.75;
+                max-width:1120px;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+@media (max-width:292px) {
+    *{
+        word-break: break-all;
+    }
+}

@@ -8,17 +8,11 @@
     .logoLink{
         margin: 0 50px;
     }
-    .navBox{
-        width: 75%;
-        height: 145px;
-        border-bottom-left-radius: 25px;
-        background-color: #ff9500;
+    /* .wideNavBox{
+        width: 100%;
+        background-color: #383838;
         display: flex;
-        align-items: flex-end;
         justify-content: space-evenly;
-        padding: 0 50px;
-        padding-bottom: 40px;
-        gap: 20px;
         a{
             white-space: nowrap;
             color: #B11111;
@@ -34,9 +28,9 @@
             scale: 0.97;
             text-shadow: 0px 0px 2px rgba(255,255,255,0.8);
         }
-    }
+    } */
 }
-@media (max-width:1440px) {
+/* @media (max-width:1440px) {
    .headerBar .navBox{
    }
    .headerBar .navBox a{
@@ -45,14 +39,15 @@
    }
    .headerBar .navBox .burgerMenu{
    }
-}
+} */
 
 .headerBarMobile{
     width: 100%;
     display: flex;
     align-items: flex-end;
+    /* justify-content: center; */
     justify-content: space-between;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     /* overflow: hidden; */
     .logoLink{
         margin: 0 50px 0 50px;
@@ -65,12 +60,18 @@
         background-color: #ff9500;
         padding: 25px 50px;
         .iconBar{
-            width: 100%;
+            width: 120px;
+            margin-left: auto;
             display: flex;
             justify-content: flex-end;
             align-items: center;
             gap: 15px;
             margin-bottom: 10px;
+            transition: 0.3s all;
+            transform: translateX(0px);
+            &.active{
+                transform: translateX(-270px);
+            }
             a:nth-child(1){
                 width: 36px;
                 height: 36px;
@@ -92,7 +93,8 @@
             margin-bottom: 15px;
         }
         .menuIconsContainer{
-            width: 100%;
+            width: 120px;
+            margin-left: auto;
             display: flex;
             /* flex-direction: column; */
             align-items: center;
@@ -101,30 +103,181 @@
             color: #ff9500;
             color: #262626;
             font-size: 1.5rem;
+            user-select: none;
+            cursor: pointer;
+            transition: 0.3s all;
+            transform: translateX(0px);
+            &.active{
+                width: 150px;
+                transform: translateX(-270px);
+            }
             i:nth-child(1){
                 /* margin-right: 2px; */
                 transform: rotate(90deg);
                 color: #B11111;
+                transition: 0.4s all;
+                &.active{
+                    transform: rotate(270deg);
+                }
             }
             span{
                 font-size: 1.20rem;
                 font-weight: 800;
-                margin-right: 5px;
+                margin-right: 5px; 
+            }
+        }
+        .wideNavBox{
+            width: 100%;
+            /* background-color: #383838; */
+            display: none;
+            justify-content: space-between;
+            list-style: none;
+            ul{
+                list-style: none;
+                position: relative;
+                i{
+                    color: #B11111;
+                    font-size: 1.15rem;
+                    margin-left: 1px;
+                    rotate: -180deg;
+                    transition: 0.3s all;
+                    &.active{
+                        rotate: 0deg;
+                    }
+                }
+            }
+            ul > ul{
+                list-style: none;
+                visibility: hidden;
+                background-color: #ff9500;
+                max-width: 0px;
+                max-height: 0px;
+                transition: 0.3s all;
+                position: absolute;
+                top: 30px;
+                left: 0px;
+                /* border: 1px solid #B11111; */
+                overflow: hidden;
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                gap: 0px;
+                opacity: 0;
+                li{
+                    border: 1px solid #B11111;
+                    padding: 7px;
+                }
+                .wideMenuInnerSpecialLine{
+                    /* display: none; */
+                    width: 95%;
+                    margin: auto;
+                    border: 1px solid #B11111;
+                }
+                &.active{
+                    overflow: visible;
+                    /* padding: 10px; */
+                    visibility: visible;
+                    max-width: 200px;
+                    max-height: 700px;
+                    opacity: 1;
+                    /* gap: 5px; */
+                }
+                .wideMenuInnerDropdown{
+                    top: 0px;
+                    left: 189px;
+                }
+            }
+            a{
+                white-space: nowrap;
+                color: #B11111;
+                font-size: 1.25rem;
+                font-weight: bold;
+                transition: all 0.1s ease-out;
+            }
+            a:hover{
+                text-shadow: 0px 2px 4px rgba(255,255,255,0.4);
+                scale: 1.05;
+                transform: translateY(-25px);
+            }
+            a:active{
+                scale: 0.97;
+                text-shadow: 0px 0px 2px rgba(255,255,255,0.8);
             }
         }
     }
+    @media (min-width:1400px){
+        .navBox{
+
+        }
+        .navBox .menuIconsContainer{
+            display: none;
+        }
+        .navBox .wideNavBox{
+            display: flex;
+        }
+    }
+    @media (max-width:627px) {
+        align-items: center;
+        justify-content: flex-start;
+        .MainLogoLink{
+            width: calc(90% - 175px);
+            margin: 0 auto;
+
+        }
+        .MainLogoLink img{
+            width: 100%;
+        }
+        .navBox{
+            overflow: hidden;
+            max-width: 175px;
+            padding: 25px 25px;
+        }
+    }
+    @media (max-width:480px) {
+        /* align-items: flex-end; */
+        .MainLogoLink{
+            width: calc(90% - 120px);
+        }
+        .navBox{
+            max-height: 90px;
+            max-width: 120px;
+            padding: 0px 20px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .navBox .iconBar{
+            display: none;
+        }
+        .navBox .menuIconsContainer{
+            width: 80px;
+            
+        }
+    }
     .mobileSideMenu{
-        width: 300px;
-        height: 100vh;
+        /* width: 300px; */
+        z-index: 10;
+        width: 0px;
+        height: 100dvh;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s all;
+        overflow-y: auto;
         background-color: #ff9500;
         position: fixed;
         top: 0px;
         right: 0px;
         box-shadow: 0px 0px 10px 25px rgba(0, 0, 0, 0.4);
-        padding: 60px 30px;
+        padding: 60px 0px 0px 0px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        &.active{
+            opacity: 1;
+            visibility: visible;
+            width: 300px;
+        }
         .mobilMenuCloseButton{
             position: absolute;
             top: 15px;
@@ -133,17 +286,36 @@
             /* color: #B11111; */
             color: black;
             cursor: pointer;
+            transition: 0.3s all;
+            transform: translateY(-12px);
+            transform: translateX(120px);
+            &.active{
+                transform: translateY(0px);
+                transform: translateX(0px);
+            }
         }
         .mobileSideMenuİconBar{
-            width: 100%;
+            width: 240px;
+            margin: 0 auto;
             display: flex;
+            /* display: none; */
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 10px;
+            margin-bottom: 10px;
             padding: 15px 0;
             background-color: #262626;
             box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
+            transition: 0.3s all;
+            transform: translateX(-150px);
+            visibility: hidden;
+            opacity: 0;
+            &.active{
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(0px);
+            }
             .iconBar{
                 display: flex;
                 align-items: center;
@@ -157,12 +329,19 @@
                 box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
             }
         }
-        .mobilMenuNav{
+        .mobilMenuNavBar{
+            width: 240px;
+            margin: 0 auto;
             list-style: none;
             /* background-color: #aaa; */
             /* background-color: #262626; */
             text-align: center;
             font-size: 1.4rem;
+            transition: 0.3s all;
+            transform: translatex(120px);
+            &.active{
+                transform: translatex(0px);
+            }
             i{
                 position: absolute;
                 cursor: pointer;
@@ -180,20 +359,35 @@
                 background-color: #262626;
                 /* border-right: 2px solid #ff9500 ; */
                 border-left: 5px solid #ff9500 ;
-                li{
-                    /* margin-left: 25px; */
-                }
             }
         }
         .dropDownLink{
-            margin-bottom: 10px;
+            &.active{
+                margin-bottom: 10px;
+            }
             a{
                 position: relative;
+                i{
+                    transition: 0.3s all;
+                    transform: rotate(0deg);
+                    &.active{
+                        transform: rotate(180deg);
+                    }
+                }
             }
         }
-        .dropDown{
+        .dropDownUpper{
             /* display: none; */
             /* background-color:#262626; */
+            opacity: 0;
+            visibility: hidden;
+            max-height: 0px;
+            transition: 0.5s all;
+            &.active{
+                opacity: 1;
+                visibility: visible;
+                max-height: 410px;
+            }
             li{
                 width: 90%;
                 margin-left: 10px;
@@ -202,6 +396,16 @@
             }
             .dropDownInner{
                 /* background-color: #B11111; */
+                /* display: none; */
+                opacity: 0;
+                visibility: hidden;
+                max-height: 0px;
+                transition: 0.4s all;
+                &.active{
+                    opacity: 1;
+                    visibility: visible;
+                    max-height: 140px;
+                }
                 li{
                     background-color: #383838;
                     border-left: 2px solid #ff9500;
