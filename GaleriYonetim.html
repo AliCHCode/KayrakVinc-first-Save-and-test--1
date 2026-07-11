@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Yönetim - Kayrak Vinç</title>
+    <link rel="stylesheet" href="./css/GaleriYonetim.css">
+</head>
+<body>
+    <div class="mainLine">
+
+        <section class="pageTitleSection">
+            <div class="pageTitleContent">
+                <span class="titleSquare"></span>
+                <h1>Galeri Yönetim Paneli</h1>
+            </div>
+        </section>
+
+        <section class="adminSection">
+
+            <div class="adminKeyBox">
+                <label for="adminKey">Yönetim Anahtarı</label>
+                <input type="password" id="adminKey" placeholder="config.php içindeki admin_key">
+                <small>Bu anahtar olmadan ürün ekleyemez veya resim yükleyemezsiniz.</small>
+            </div>
+
+            <div class="adminGrid">
+
+                <!-- Yeni Ürün Ekle -->
+                <div class="adminCard">
+                    <h2>Yeni Ürün Ekle</h2>
+                    <form id="addProductForm">
+                        <input type="text" id="productName" placeholder="Ürün adı (örn: Portal Vinçler)" required>
+                        <button type="submit">Ürün Ekle</button>
+                        <p class="formFeedback" id="addProductFeedback" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+
+                <!-- Resim Yükle -->
+                <div class="adminCard">
+                    <h2>Resim Yükle</h2>
+                    <form id="uploadForm">
+                        <label for="productSelect">Hangi ürün için?</label>
+                        <select id="productSelect" required>
+                            <option value="">Ürün seçin...</option>
+                        </select>
+
+                        <label for="imageInput">Resim seçin</label>
+                        <input type="file" id="imageInput" accept="image/jpeg,image/png,image/webp,image/gif" required>
+
+                        <div class="imagePreview" id="imagePreview"></div>
+
+                        <button type="submit">Yükle</button>
+                        <p class="formFeedback" id="uploadFeedback" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+
+            </div>
+
+            <p class="adminHint">
+                Yüklediğiniz resimler otomatik olarak
+                <a href="./Galeri.html">Galeri sayfasında</a> ilgili ürün altında listelenir.
+            </p>
+
+        </section>
+
+    </div>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/galeriYonetim.js"></script>
+</body>
+</html>

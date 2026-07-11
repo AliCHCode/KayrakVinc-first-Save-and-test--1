@@ -18,8 +18,21 @@
             </div>
         </section>
 
+        <section class="gallerySection">
+            <div class="galleryTabs" id="galleryTabs"></div>
+            <p class="galleryStatus" id="galleryStatus"></p>
+            <div class="galleryGrid" id="galleryGrid"></div>
+        </section>
+
     </div>
-    <script src="../js/navigator.js"></script>
-    <script src="../js/slider.js"></script>
+
+    <div class="lightbox" id="lightbox" hidden>
+        <button class="lightboxClose" id="lightboxClose" aria-label="Kapat">&times;</button>
+        <img id="lightboxImg" src="" alt="">
+    </div>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/navigator.js"></script>
+    <script src="./js/galeri.js"></script>
 </body>
 </html>

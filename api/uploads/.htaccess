@@ -1,0 +1,10 @@
+# Yüklenen dosyalar klasöründe PHP/script çalıştırmayı engelle (güvenlik)
+php_flag engine off
+
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|pht|phar|cgi|pl|py|sh)$">
+    Require all denied
+</FilesMatch>
+
+Options -ExecCGI
+AddHandler cgi-script .php .pl .py .jsp .asp .sh .cgi
+RemoveHandler .php .phtml .php3 .php4 .php5
