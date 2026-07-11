@@ -106,7 +106,7 @@ let catchSelectors = function (){
                             <div class="wideMenuInnerSpecialLine"></div>
                                 <ul class="wideMenuInnerDropdown">
                                     <li>
-                                        <a href="#">Çift Kiriş Köprü Vinçler</a>
+                                        <a href="../ÇiftKiriş.html">Çift Kiriş Köprü Vinçler</a>
                                     </li>
                                     <div class="wideMenuInnerSpecialLine"></div>
                                     <li>
