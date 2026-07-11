@@ -166,6 +166,21 @@
             background:#c30c11;
         }
 
+        .formFeedback{
+            margin:0;
+            font-size:1.15rem;
+            line-height:1.4;
+            min-height:1.2em;
+        }
+
+        .formFeedback.error{
+            color:#c30c11;
+        }
+
+        .formFeedback.success{
+            color:#1a7a2e;
+        }
+
     }
 
     .contactInfo{

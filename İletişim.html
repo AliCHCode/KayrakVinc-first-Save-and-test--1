@@ -21,18 +21,25 @@
         <section class="contactSection">
             <div class="contactContent">
                 <!-- FORM -->
-                <div class="contactForm">
+                <form class="contactForm" action="https://formsubmit.co/info@kayrakvinc.com" method="post">
+                    <!-- FormSubmit ayarları -->
+                    <input type="hidden" name="_subject" value="Kayrak Vinç - Yeni İletişim Formu Mesajı">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Bot tuzağı (kullanıcı görmez) -->
+                    <input type="text" name="_honey" style="display:none">
                     <div class="inputRow">
-                        <input type="text" placeholder="Adınız">
-                        <input type="text" placeholder="Soyadınız">
+                        <input type="text" id="firstName" name="Ad" placeholder="Adınız" required>
+                        <input type="text" id="lastName" name="Soyad" placeholder="Soyadınız" required>
                     </div>
-                    <input type="email" placeholder="Email">
-                    <input type="tel" placeholder="Telefon">
-                    <textarea placeholder="Mesajınız"></textarea>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="tel" id="phone" name="Telefon" placeholder="Telefon" required>
+                    <textarea id="message" name="Mesaj" placeholder="Mesajınız" required></textarea>
                     <button type="submit">
                         GÖNDERİN
                     </button>
-                </div>
+                    <p class="formFeedback" id="formFeedback" role="status" aria-live="polite"></p>
+                </form>
                 <!-- INFO -->
                 <div class="contactInfo">
                     <h2>
@@ -79,6 +86,6 @@
         </section>
 
     </div>
-    <script src="../js/navigator.js"></script>
+    <script src="./js/navigator.js"></script>
 </body>
 </html>
