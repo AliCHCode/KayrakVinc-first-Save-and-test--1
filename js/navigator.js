@@ -110,7 +110,7 @@ let catchSelectors = function (){
                                     </li>
                                     <div class="wideMenuInnerSpecialLine"></div>
                                     <li>
-                                        <a href="#">Monoray Köprü Vinçler</a>
+                                        <a href="../MonorayVinçler.html">Monoray Köprü Vinçler</a>
                                     </li>
                                 </ul>
                             <li>
