@@ -1,0 +1,25 @@
+.pageTitleSection {
+  width: 81%;
+  margin-bottom: 52px;
+
+  .pageTitleContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .titleSquare {
+      width: 22px;
+      height: 22px;
+      background: #b11111;
+      flex-shrink: 0;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #202020;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+  }
+}

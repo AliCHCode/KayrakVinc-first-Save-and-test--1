@@ -141,7 +141,7 @@ let catchSelectors = function (){
                         <a href="../YedeKParcalar.html">YEDEK PARÇALAR</a>
                     </li>
                     <li>
-                        <a href="#">GALERİ</a>
+                        <a href="../Galeri.html">GALERİ</a>
                     </li>
                     <li>
                         <a class="specialLink" href="../İletişim.html">İLETİŞİM</a>
@@ -154,10 +154,10 @@ let catchSelectors = function (){
                 
                 <ul class="mobilMenuNavBar">
                     <li>
-                        <a href="#">KURUMSAL</a>
+                        <a href="../Hakkımızda.html">KURUMSAL</a>
                     </li>
                     <li>
-                        <a href="#">HİZMETLER</a>
+                        <a href="../KeşifMontajVeKurulum.html">HİZMETLER</a>
                     </li>
                     <li>
                         <div class="dropDownLink upperDropDownLink">
@@ -174,41 +174,41 @@ let catchSelectors = function (){
                                 </div>
                                 <ul class="dropDownInner">
                                     <li>
-                                        <a href="#">Çift Kiriş Köprü Vinçler</a>
+                                        <a href="../ÇiftKiriş.html">Çift Kiriş Köprü Vinçler</a>
                                     </li>
                                     <li>
-                                        <a href="#">Monoray Köprü Vinçler</a>
+                                        <a href="../MonorayVinçler.html">Monoray Köprü Vinçler</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Portal Vinçler</a>
+                                <a href="../PortalVinçler.html">Portal Vinçler</a>
                             </li>
                             <li>
-                                <a href="#">Pergel Vinçler</a>
+                                <a href="../PergelVinçler.html">Pergel Vinçler</a>
                             </li>
                             <li>
-                                <a href="#">Kanca Altı Ekipmanları</a>
+                                <a href="../KancaAltıEkipmanlar.html">Kanca Altı Ekipmanları</a>
                             </li>
                             <li>
-                                <a href="#">Özel Tasarım Vinçler</a>
+                                <a href="../ÖzelTasarımVinçler.html">Özel Tasarım Vinçler</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">ÖZEL YAPIM PROJELER</a>
+                        <a href="../ÖzelYapımProjeler.html">ÖZEL YAPIM PROJELER</a>
                     </li>
                     <li>
-                        <a href="#">TEKNİK SERVİS VE BAKIM</a>
+                        <a href="../TeknikServisVeBakım.html">TEKNİK SERVİS VE BAKIM</a>
                     </li>                    
                     <li>
-                        <a href="#">YEDEK PARÇALAR</a>
+                        <a href="../YedeKParcalar.html">YEDEK PARÇALAR</a>
                     </li>
                     <li>
-                        <a href="#">GALERİ</a>
+                        <a href="../Galeri.html">GALERİ</a>
                     </li>
                     <li>
-                        <a href="#">İLETİŞİM</a>
+                        <a href="../İletişim.html">İLETİŞİM</a>
                     </li>
                 </ul>
                 <div class="mobileSideMenuİconBar">
