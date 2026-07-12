@@ -446,3 +446,41 @@ wideMenuInnerTitle.addEventListener("click",()=>{
     wideMenuInnerIcon.classList.toggle("active");
     // wideMenuUpperDropdown.classList.toggle("activeTwo");
 })
+
+const wideNavBox = document.querySelector(".wideNavBox");
+
+document.addEventListener("click", (e) => {
+    if (!wideNavBox.contains(e.target)) {
+        wideMenuUpperDropdown.classList.remove("active");
+        wideMenuUpperIcon.classList.remove("active");
+
+        wideMenuInnerDropdown.classList.remove("active");
+        wideMenuInnerIcon.classList.remove("active");
+    }
+});
+
+document.addEventListener("click", (e) => {
+    if (
+        mobileSideMenu.classList.contains("active") &&
+        !mobileSideMenu.contains(e.target) &&
+        !menuIconsContainer.contains(e.target)
+    ) {
+
+        mobileSideMenu.classList.remove("active");
+        mobilMenuNavBar.classList.remove("active");
+        mobileSideMenuİconBar.classList.remove("active");
+        mobilMenuCloseButton.classList.remove("active");
+
+        dropDownUpper.classList.remove("active");
+        upperDropDownLink.classList.remove("active");
+        slideMenuUppersIcon.classList.remove("active");
+
+        dropDownInner.classList.remove("active");
+        innerDropDownLink.classList.remove("active");
+        slideMenuDownersIcon.classList.remove("active");
+
+        menuIconsContainer.style.transform = "translateX(0px)";
+        iconBar.style.transform = "translateX(0px)";
+        mainMenuDownIcon.classList.remove("active");
+    }
+});
