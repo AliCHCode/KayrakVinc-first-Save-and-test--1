@@ -157,6 +157,73 @@ body {
     }
 }
 
+.selectedImagesCard {
+    .selectedImagesNote {
+        color: #666;
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+    }
+}
+
+.selectedImagesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 14px;
+    min-height: 40px;
+}
+
+.selectedImageItem {
+    position: relative;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fafafa;
+
+    img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .selectedImageMeta {
+        padding: 8px 10px;
+        font-size: 0.82rem;
+        color: #555;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.deleteImageBtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(177, 17, 17, 0.95);
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.deleteImageBtn:hover {
+    transform: scale(1.06);
+    background: #c30c11;
+}
+
+.deleteImageBtn svg {
+    width: 17px;
+    height: 17px;
+    display: block;
+}
+
 .formFeedback {
     margin: 0;
     font-size: 0.95rem;
