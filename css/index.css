@@ -216,7 +216,7 @@
         align-items: center;
         padding: 35px;
 
-    & > img {
+    & > a > img {
         width: 80px;
         height: 80px;
     }
@@ -248,7 +248,7 @@
         align-items: center;
         padding: 10px;
 
-        & > h6 {
+        & > a > h6 {
             font-size: 24px;
             color: white;
             font-weight: 400;
@@ -269,6 +269,14 @@
 
 .card-container .card-each {
     width: calc((100% - 3 * var(--card-gap)) / 4);
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 20px; */
+    /* justify-content: center; */
+}
+
+.card-container .card-each a {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -282,6 +290,7 @@
     text-align: center;
     font-size: 1.5rem;
     font-weight: 400;
+    color: #000000;
 }
 
 .card-container .card-image-container { 
@@ -295,6 +304,9 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 1.5;
+    color: #000000;
+
+    display: none;
 }
 
 
@@ -482,7 +494,7 @@
             padding: 5px;
             margin-bottom: 15px;
             
-            & > img {
+            & > a > img {
                 width: 40px;
                 height: 40px;
             }
@@ -492,7 +504,7 @@
     .card-section .inner-container {
         & > div {
 
-            & > h6 {
+            & > a > h6 {
                 font-size: 16px;
             }
         }

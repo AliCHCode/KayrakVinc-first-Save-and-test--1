@@ -390,9 +390,14 @@
         padding: 45px 35px;
       }
       .introImage {
-width: 100% !important;
+        width: 100% !important;
+      }
+}
+
+@media (max-width:400px) {
+  .maintenanceSection{
+    .maintenanceImage{
+      min-width: 0px;
     }
-
-
-
+  }
 }

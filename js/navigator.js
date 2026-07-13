@@ -73,7 +73,7 @@ let catchSelectors = function (){
                     <a href="https://www.linkedin.com/in/kayrak-vin%C3%A7-crane-systems-b9ba56245?originalSubdomain=tr">
                         <img src="./assets/socialİcons/linkedin.png" alt="Linkedin İcon">
                     </a>
-                    <a href="https://wa.me/905423699654">
+                    <a href="https://wa.me/905498889654">
                         <img src="./assets/socialİcons/wp.png" alt="Phoneİcon">
                     </a>
                 </div>
@@ -219,7 +219,7 @@ let catchSelectors = function (){
                         <a href="https://www.linkedin.com/in/kayrak-vin%C3%A7-crane-systems-b9ba56245?originalSubdomain=tr">
                             <img src="./assets/socialİcons/linkedin.png" alt="Linkedin İcon">
                         </a>
-                        <a href="https://wa.me/905423699654">
+                        <a href="https://wa.me/905498889654">
                             <img src="./assets/socialİcons/wp.png" alt="Phoneİcon">
                         </a>
                     </div>
@@ -245,7 +245,7 @@ let catchSelectors = function (){
                 <a href="https://www.linkedin.com/in/kayrak-vin%C3%A7-crane-systems-b9ba56245?originalSubdomain=tr">
                     <img src="./assets/socialİcons/linkedin.png" alt="Linkedin İcon">
                 </a>
-                <a href="https://wa.me/905423699654">
+                <a href="https://wa.me/905498889654">
                     <img src="./assets/socialİcons/wp.png" alt="Phoneİcon">
                 </a>
             </div>
