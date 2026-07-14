@@ -48,6 +48,7 @@
         .introText{
 
             width:38%;
+            width:100%;  /** resmi koymak için bunu kaldır**/
             background:#ff9800;
 
             display:flex;
@@ -79,13 +80,10 @@
         }
 
         .introImage{
-
             width:62%;
             /* height:500px; */
             background:#d9d9d9;
-
             img{
-
                 width:100%;
                 height:100%;
                 object-fit:cover;
